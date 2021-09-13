@@ -1,0 +1,42 @@
+@use '../util' as *;
+
+.bg-pattern {
+  background-image: url("/images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 50vh;
+  margin: rem(10) auto;
+  padding: rem(25);
+}
+.image-container {
+  overflow: hidden;
+  width: rem(215);
+  height: rem(215);
+  border-radius: rem(8);
+  margin: 0 auto;
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+.profile {
+  position: relative;
+}
+.nav-buttons {
+  position: absolute;
+  bottom: rem(-20);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: rem(10);
+  border-radius: rem(30);
+  box-shadow: 3px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  width: rem(80);
+  img {
+    width: rem(15);
+    height: rem(15);
+  }
+}
