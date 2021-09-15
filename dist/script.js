@@ -1,2 +1,2 @@
-"use strict";console.log("Hello");
+"use strict";console.log("Hello");var slides=document.querySelectorAll(".slide-container"),nexBtn=document.querySelector(".next"),prevBtn=document.querySelector(".prev"),slidesText=document.querySelectorAll(".text");slides.forEach((function(e,t){e.style.left="".concat(100*t,"%")})),slidesText.forEach((function(e,t){e.style.left="".concat(100*t,"%")}));var counter=0;function carousel(){counter===slides.length&&(counter=0),counter<0&&(counter=slides.length-1),slides.forEach((function(e){e.style.transform="translateX(-".concat(100*counter,"%)")}))}nexBtn.addEventListener("click",(function(){counter++,carousel()})),prevBtn.addEventListener("click",(function(){counter--,carousel()}));
 //# sourceMappingURL=script.js.map
