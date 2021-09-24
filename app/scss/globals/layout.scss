@@ -63,10 +63,15 @@
 }
 .testimonial {
   height: 50vh;
+  padding: rem(25);
+  position: relative;
 }
 
 .slides-text {
   position: relative;
+  height: rem(300);
+  width: rem(300);
+  overflow: hidden;
 }
 
 .text {
@@ -76,8 +81,8 @@
   background-size: rem(75) auto;
   background-position: top center;
   max-width: 90%;
-  margin: rem(15) auto 0;
-  padding: rem(20) rem(25);
+  // margin: rem(15) auto 0;
+  // padding: rem(20) rem(25);
   text-align: center;
 
   .name {
