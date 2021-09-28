@@ -1,4 +1,4 @@
-@use '../util' as *;
+@use "../util" as *;
 
 .bg-pattern {
   background-image: url("/images/pattern-bg.svg");
@@ -62,23 +62,26 @@
   }
 }
 .testimonial {
-  height: 50vh;
+  height: 60vh;
 }
 
 .slides-text {
   position: relative;
+  overflow: hidden;
+  width: rem(200);
+  height: 100%;
+  margin: 0 auto;
 }
 
 .text {
   position: absolute;
-  background-image: url(/images/pattern-quotes.svg);
+  background-image: url("/images/pattern-quotes.svg");
   background-repeat: no-repeat;
   background-size: rem(75) auto;
   background-position: top center;
-  max-width: 90%;
   margin: rem(15) auto 0;
-  padding: rem(20) rem(25);
   text-align: center;
+  transition: all 0.25s ease-in-out;
 
   .name {
     font-size: rem(16);

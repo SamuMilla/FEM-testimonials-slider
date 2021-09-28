@@ -1,3 +1,4 @@
+@use "../util" as *;
 h1,
 h2,
 h3 {
@@ -11,7 +12,7 @@ a:active {
 }
 
 p {
-  font-size: rem(32);
+  font-size: rem(18);
   font-weight: 300;
   color: var(--dark-blue);
 }

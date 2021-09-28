@@ -25,7 +25,7 @@ prevBtn.addEventListener("click", function () {
 
 function carousel() {
   //working with slides
-  if (counter === slides.length) {
+  if (counter === slides.length && counter === slidesText.length) {
     counter = 0;
   }
   if (counter < 0) {
@@ -33,5 +33,8 @@ function carousel() {
   }
   slides.forEach(function (slide) {
     slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
+  slidesText.forEach(function (textSlide) {
+    textSlide.style.transform = `translateX(-${counter * 100}%)`;
   });
 }
